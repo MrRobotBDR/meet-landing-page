@@ -1,0 +1,16 @@
+@import "variables";
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Red Hat Display", sans-serif;
+}
+
+a,
+a:visited {
+	text-decoration: none;
+	color: $color-white;
+}
+
+// Could of put buttons here I guess. First project using SASS.

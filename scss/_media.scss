@@ -1,0 +1,131 @@
+@media only screen and (max-width: 375px) {
+	body {
+		margin: 0;
+		padding: 0;
+	}
+	header {
+		width: 375px;
+		margin-top: 48px;
+		margin-bottom: 54px;
+		padding-top: 0;
+		padding-bottom: 0;
+		color: pink;
+	}
+
+	.hero {
+		display: grid;
+		grid-template-areas:
+			"grid1 grid2"
+			"grid3 grid3";
+		margin: 0;
+	}
+
+	.image1 {
+		grid-area: grid1;
+		margin-bottom: 48px;
+
+		img {
+			width: 200px;
+			height: 150px;
+		}
+	}
+
+	.hero-content {
+		width: 375px;
+		margin: 0;
+		grid-area: grid3;
+
+		h1 {
+			color: #28283d;
+			text-align: center;
+			font-size: 40px;
+			font-weight: 900;
+			line-height: 44px;
+		}
+
+		p {
+			width: auto;
+			margin: 0 24px;
+		}
+	}
+
+	.image2 {
+		grid-area: grid2;
+		margin-left: 35px;
+		overflow: none;
+		img {
+			width: 200px;
+			height: 150px;
+		}
+	}
+
+	.hero-buttons {
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.line {
+		margin-top: 64px;
+	}
+
+	.card-section {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows: 1fr 1fr;
+		place-items: center;
+		gap: 24px;
+
+		.card {
+			width: 151px;
+			height: 143px;
+		}
+	}
+
+	.info-section {
+		width: 327px;
+		padding: 10px;
+		height: 45vh;
+
+		h2 {
+			width: auto;
+			text-align: center;
+			font-size: 32px;
+			font-style: normal;
+			font-weight: 900;
+			line-height: 36px;
+		}
+	}
+
+	.footer-container {
+		background-image: url(/assets/mobile/image-footer.jpg);
+		flex-direction: column;
+		justify-content: center;
+		padding: 20px;
+		gap: 30px;
+		text-align: center;
+		height: 428px;
+
+		.footer-button {
+			margin: 40px 0;
+		}
+
+		h2 {
+			text-align: center;
+			font-size: 32px;
+			font-weight: 900;
+			line-height: 36px;
+		}
+
+		p {
+			text-align: center;
+			font-size: 18px;
+			font-weight: 500;
+			line-height: 26px;
+		}
+
+		.footer-button {
+			margin: 0;
+		}
+	}
+}
